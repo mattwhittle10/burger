@@ -1,30 +1,41 @@
-<h2>Add A Burger</h2>
-  <form method="POST" action="api/burgers" class="addOne text-center">
-    <textarea id="textArea" type="text" name="burger_name" rows="2" cols="40"></textarea>
-      <button type="submit">Create!</button>
-  </form>
-            
-<h2>New Burgers</h2>
-  <div>
-    <ul>
-      {{#each burgersObject}} {{#unless this.devoured}}
-        <li>
-          <p>{{this.burgersObject_name}}</p>
-            <form action="api/burgers/{{this.id}}?_method=PUT" method="POST" class="dev">
-              <input type="hidden" name="devoured" value="true">
-                <button type="submit">Devour it</button>
-            </form>
-        </li>
-      {{/unless}} {{/each}}
-    </ul>
+<h1>Welcome to Burger Town</h1>
+
+<img src="/assets/img/burger_background.jpeg" alt="burger picture">
+
+<div class="currentList">          
+  <h2 id="createdHeading">Burgers Created</h2>
+    <div>
+      <ul>
+        {{#each burger}} {{#unless this.devoured}}
+          <li>
+            <p>{{this.burger_name}}</p>
+              <form action="api/burgers/{{this.id}}?_method=PUT" method="POST" class="dev">
+                <input type="hidden" name="devoured" value="true">
+                  <button type="submit">Devour it</button>
+              </form>
+          </li>
+        {{/unless}} {{/each}}
+      </ul>
   </div>
 
-<h2>Burgers Devoured</h2>
-  <ul>
-    {{#each burgersObject}} {{#if this.devoured}}
-      <li>
-        <p>{{this.burgersObject_name}}</p>
-      </li>
-    {{/if}} {{/each}}
-  </ul>
+
+  <div class="devoured">
+    <h2>Burgers Devoured</h2>
+      <ul>
+        {{#each burger}} {{#if this.devoured}}
+          <li>
+            <p>{{this.burger_name}}</p>
+          </li>
+        {{/if}} {{/each}}
+      </ul>
+  </div>
+</div>
+
+<div class="create">
+  <h2>Create Your Own Burger Name</h2>
+    <form method="POST" action="api/burgers">
+      <textarea id="textArea" type="text" name="burger_name" rows="2" cols="40"></textarea>
+        <button id="createbtn" type="submit">Create!</button>
+    </form>
+</div>
               
