@@ -14,6 +14,7 @@ img {
 
 h1 {
     color: yellowgreen;
+    font-family: American Typewriter, serif;
     font-style: italic;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
@@ -24,6 +25,7 @@ h1 {
 
 h2 {
     color: yellowgreen;
+    font-family: American Typewriter, serif;
     font-style: italic;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
@@ -52,11 +54,13 @@ button {
     color: goldenrod;
     background-color: blueviolet;
     border-radius: 50%;
-    padding: 1%
+    padding: 1%;
+    font-family: American Typewriter, serif;
 }
 
 p {
     color: blueviolet;
+    font-family: American Typewriter, serif;
     font-size: 30px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
