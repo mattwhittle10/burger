@@ -1,0 +1,84 @@
+body {
+    background-image: url("/assets/img/main_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    margin-left: 10%;
+}
+
+img {
+    float: right;
+    width: 35%;
+    margin-right: 5%;
+}
+
+h1 {
+    color: yellowgreen;
+    font-style: italic;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: -4%;
+}
+
+h2 {
+    color: yellowgreen;
+    font-style: italic;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.currentList {
+    margin-top: 2%;
+    
+}
+
+.devoured {
+    float: right;
+    margin-right: 10%;
+    margin-top: 0;
+
+}
+
+.create {
+    margin-top: 16%;
+    margin-left: -5%;
+}
+
+button {
+    color: goldenrod;
+    background-color: blueviolet;
+    border-radius: 50%;
+    padding: 1%
+}
+
+p {
+    color: blueviolet;
+    font-size: 30px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+li {
+    margin-left: -3%;
+}
+
+textarea {
+    border: 2px solid greenyellow;
+    height: 30px;    
+}
+
+#createbtn {
+    margin-bottom: 5%;
+    border-radius: 50%;
+}
+
+#createdHeading {
+    margin-left: -2%;
+}

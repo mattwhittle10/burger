@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://localhost:8000/burgers -->
+<html lang="en"><link type="text/css" id="dark-mode" rel="stylesheet" href="http://localhost:8000/burgers"><style type="text/css" id="dark-mode-custom-style"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Burger Town!</title>
+	<!-- Required meta tags -->
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="./Burger Town!_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./Burger Town!_files/style.css">
+  </head>
+  <body>
+	  <h1>Welcome to Burger Town</h1>
+
+<img src="./Burger Town!_files/burger_background.jpeg" alt="burger picture">
+
+<div class="currentList">          
+  <h2 id="createdHeading">Burgers Created</h2>
+    <div>
+      <ul>
+                     
+          <li>
+            <p>Swiss Burger</p>
+              <form action="http://localhost:8000/api/burgers/17?_method=PUT" method="POST" class="dev">
+                <input type="hidden" name="devoured" value="true">
+                  <button type="submit">Devour it</button>
+              </form>
+          </li>
+         
+      </ul>
+  </div>
+
+
+  <div class="devoured">
+    <h2>Burgers Devoured</h2>
+      <ul>
+         
+          <li>
+            <p>Bacon Cheesburger</p>
+          </li>
+          
+          <li>
+            <p>Mushroom Burger</p>
+          </li>
+          
+          <li>
+            <p>Pastrami Burger</p>
+          </li>
+          
+          <li>
+            <p>Western Burger</p>
+          </li>
+          
+          <li>
+            <p>Cheese Burger</p>
+          </li>
+          
+          <li>
+            <p>Avacado Burger</p>
+          </li>
+           
+      </ul>
+  </div>
+</div>
+
+<div class="create">
+  <h2>Create Your Own Burger Name</h2>
+    <form method="POST" action="http://localhost:8000/api/burgers">
+      <textarea id="textArea" type="text" name="burger_name" rows="2" cols="40"></textarea>
+        <button id="createbtn" type="submit">Create!</button>
+    </form>
+</div>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="./Burger Town!_files/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="./Burger Town!_files/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="./Burger Town!_files/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+</body></html>
